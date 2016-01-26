@@ -19,6 +19,9 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        Bundle bundle = getIntent().getExtras();
+        String message = bundle.getString("MASSAGE");
+
         //action bar "back"
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
